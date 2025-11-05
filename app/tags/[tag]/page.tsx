@@ -100,7 +100,7 @@ export default async function TagPage({
                         </div>
                       )}
                     </CardHeader>
-                    <CardFooter>
+                    <CardFooter className="pt-6">
                       <Button asChild variant="default">
                         <Link href={`/posts/${post.slug}`}>
                           Ler mais
