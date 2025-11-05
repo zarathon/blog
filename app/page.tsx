@@ -104,7 +104,7 @@ export default function Home() {
             <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Sobre Mim
             </Link>
-            <Link href="/blog/feed.xml" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/feed.xml" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               RSS
             </Link>
           </div>
