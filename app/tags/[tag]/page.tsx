@@ -135,9 +135,19 @@ export default async function TagPage({
                 Voltar para home
               </Link>
             </Button>
-            <p className="text-sm text-muted-foreground">
-              Mostrando todos os posts com a tag #{tag}
-            </p>
+            <div className="flex flex-col md:flex-row items-center gap-4">
+              <p className="text-sm text-muted-foreground">
+                Mostrando todos os posts com a tag #{tag}
+              </p>
+              <div className="flex gap-4">
+                <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Sobre Mim
+                </Link>
+                <Link href="/blog/feed.xml" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  RSS
+                </Link>
+              </div>
+            </div>
           </div>
         </footer>
       </div>

@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run validate-tags && npm run generate-rss",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "validate-tags": "node scripts/validate-tags.js"
+    "validate-tags": "node scripts/validate-tags.js",
+    "generate-rss": "node scripts/generate-rss.js"
   },
   "dependencies": {
     "@radix-ui/react-separator": "^1.1.8",
@@ -15,6 +17,7 @@
     "@tailwindcss/typography": "^0.5.19",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "feed": "^5.1.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.552.0",
     "next": "16.0.1",

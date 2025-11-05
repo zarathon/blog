@@ -24,6 +24,19 @@ const fontHeading = Instrument_Serif({
 export const metadata: Metadata = {
   title: "Devaneios do Zara",
   description: "Blog sobre engenharia de software, tecnologia, carreira e mais",
+  alternates: {
+    types: {
+      'application/rss+xml': [
+        { url: '/blog/feed.xml', title: 'RSS Feed' },
+      ],
+      'application/atom+xml': [
+        { url: '/blog/atom.xml', title: 'Atom Feed' },
+      ],
+      'application/feed+json': [
+        { url: '/blog/feed.json', title: 'JSON Feed' },
+      ],
+    },
+  },
 };
 
 export default function RootLayout({

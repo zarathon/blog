@@ -91,12 +91,22 @@ export default async function Post({
 
           <div className="mt-12">
             <Separator className="mb-8" />
-            <Button asChild variant="outline" size="lg">
-              <Link href="/">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Voltar para home
-              </Link>
-            </Button>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <Button asChild variant="outline" size="lg">
+                <Link href="/">
+                  <ArrowLeft className="mr-2 h-4 w-4" />
+                  Voltar para home
+                </Link>
+              </Button>
+              <div className="flex gap-4">
+                <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Sobre Mim
+                </Link>
+                <Link href="/blog/feed.xml" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  RSS
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

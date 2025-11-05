@@ -1,0 +1,32 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "🧠 Devaneios do Zara",
+    "home_page_url": "https://zarathon.github.io/blog",
+    "feed_url": "https://zarathon.github.io/blog/feed.json",
+    "description": "Blog sobre engenharia de software, tecnologia, carreira e mais. Conteúdo real, baseado em experiência de guerra, para quem quer crescer de verdade na área de tecnologia.",
+    "icon": "https://zarathon.github.io/blog/images/about/profile.jpg",
+    "author": {
+        "name": "Zarathon Maia",
+        "url": "https://zarathon.github.io/blog/about"
+    },
+    "items": [
+        {
+            "id": "https://zarathon.github.io/blog/posts/primeiro-post",
+            "content_html": "Voltando a escrever de uma maneira mais dedicada e não delicada!",
+            "url": "https://zarathon.github.io/blog/posts/primeiro-post",
+            "title": "Voltei. E Vou Falar o Que Ninguém Fala.",
+            "summary": "Voltando a escrever de uma maneira mais dedicada e não delicada!",
+            "image": "https://zarathon.github.io/blog/blog/images/posts/codecon-select.jpeg",
+            "date_modified": "2025-11-05T00:00:00.000Z",
+            "author": {
+                "name": "Zarathon Maia",
+                "url": "https://zarathon.github.io/blog/about"
+            },
+            "tags": [
+                "carreira",
+                "reflexoes",
+                "comunidade"
+            ]
+        }
+    ]
+}
