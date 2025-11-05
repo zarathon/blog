@@ -49,7 +49,7 @@ export default async function Post({
                 </Badge>
               </div>
               <CardTitle className="text-5xl md:text-6xl mb-6 font-heading leading-tight">
-                {post.title}
+                📄 {post.title}
               </CardTitle>
               <Separator />
             </CardHeader>

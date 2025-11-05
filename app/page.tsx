@@ -15,7 +15,7 @@ export default function Home() {
       <header className="max-w-full mx-auto px-12 md:px-16 lg:px-20 py-16 mb-12">
         <div className="text-center mb-20">
           <h1 className="text-7xl md:text-8xl font-bold mb-6 tracking-tight font-heading leading-none">
-            Devaneios do Zara
+            🧠 Devaneios do Zara
           </h1>
           <p className="text-2xl md:text-3xl text-muted-foreground mt-6">
             Blog sobre engenharia de software, tecnologia, carreira e mais
@@ -29,35 +29,50 @@ export default function Home() {
         <div className="space-y-8">
             {posts.map((post) => (
               <Card key={post.slug} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Badge variant="secondary" className="flex items-center gap-1">
-                      <Calendar className="h-3 w-3" />
-                      <time>
-                        {new Date(post.date).toLocaleDateString('pt-BR', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric',
-                        })}
-                      </time>
-                    </Badge>
+                <div className="flex gap-6">
+                  <div className="flex-1">
+                    <CardHeader>
+                      <div className="flex items-center gap-2 mb-2">
+                        <Badge variant="secondary" className="flex items-center gap-1">
+                          <Calendar className="h-3 w-3" />
+                          <time>
+                            {new Date(post.date).toLocaleDateString('pt-BR', {
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric',
+                            })}
+                          </time>
+                        </Badge>
+                      </div>
+                      <CardTitle className="text-3xl md:text-4xl font-heading leading-tight">
+                        <Link href={`/posts/${post.slug}`} className="hover:underline">
+                          📄 {post.title}
+                        </Link>
+                      </CardTitle>
+                      <CardDescription className="text-base">
+                        {post.excerpt}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardFooter>
+                      <Button asChild variant="default">
+                        <Link href={`/posts/${post.slug}`}>
+                          Ler mais
+                        </Link>
+                      </Button>
+                    </CardFooter>
                   </div>
-                  <CardTitle className="text-3xl md:text-4xl font-heading leading-tight">
-                    <Link href={`/posts/${post.slug}`} className="hover:underline">
-                      {post.title}
-                    </Link>
-                  </CardTitle>
-                  <CardDescription className="text-base">
-                    {post.excerpt}
-                  </CardDescription>
-                </CardHeader>
-                <CardFooter>
-                  <Button asChild variant="default">
-                    <Link href={`/posts/${post.slug}`}>
-                      Ler mais
-                    </Link>
-                  </Button>
-                </CardFooter>
+                  {post.image && (
+                    <div className="flex items-center pr-6">
+                      <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-muted">
+                        <img
+                          src={post.image}
+                          alt={post.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                  )}
+                </div>
               </Card>
             ))}
         </div>

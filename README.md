@@ -56,6 +56,7 @@ npm run dev
 title: 'Título do Post'
 date: '2025-11-05'
 excerpt: 'Breve descrição do post'
+image: 'https://example.com/image.jpg'  # Opcional - URL da imagem
 ---
 
 # Conteúdo do post
