@@ -31,12 +31,24 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Print Google Analytics ID
+      - name: Check Google Analytics Configuration
         run: |
           if [ -n "${{ vars.NEXT_PUBLIC_GA_ID }}" ]; then
-            echo "Google Analytics ID: ${{ vars.NEXT_PUBLIC_GA_ID }}"
+            GA_ID="${{ vars.NEXT_PUBLIC_GA_ID }}"
+            echo "✅ Google Analytics ID is configured"
+            echo "📊 Value: $GA_ID"
+            echo "📏 Length: ${#GA_ID} characters"
+            # Verifica se começa com G- (formato correto GA4)
+            if [[ "$GA_ID" == G-* ]]; then
+              echo "✅ Format looks correct (starts with G-)"
+            else
+              echo "⚠️  Warning: ID doesn't start with 'G-' (expected format for GA4)"
+            fi
           else
-            echo "Google Analytics ID not configured"
+            echo "❌ Google Analytics ID NOT configured"
+            echo "💡 To configure: GitHub repo → Settings → Secrets and variables → Actions → New variable"
+            echo "   Name: NEXT_PUBLIC_GA_ID"
+            echo "   Value: Your G-XXXXXXXXXX ID"
           fi
 
       - name: Build with Next.js
