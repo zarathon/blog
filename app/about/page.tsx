@@ -31,7 +31,7 @@ export default function AboutPage() {
                 />
               </div>
               <CardTitle className="text-5xl md:text-6xl font-heading text-center">
-                👨‍💻 Sobre Mim
+                👨🏾‍💻 Sobre Mim
               </CardTitle>
             </div>
             <Separator />
