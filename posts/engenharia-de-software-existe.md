@@ -3,7 +3,7 @@ title: 'Engenheiro de Software existe sim, e quem diz que não existe tá preso 
 date: '2025-11-06'
 excerpt: 'Engenheiro de Software é quem faz engenharia de software como trabalho, certo? Simples assim. Mas tem uma galera que insiste que isso não existe. O argumento? "Ah, mas não tem CREA, não é tangível, não constrói prédio..."'
 image: '/blog/images/posts/tijolo.png'
-tags: ['carreira', 'reflexoes', 'comunidade']
+tags: ['engenharia-de-software', 'historia']
 # Coloque sua imagem em public/images/posts/ e atualize o caminho acima
 ---
 Engenheiro de Software é quem faz engenharia de software como trabalho, certo? Simples assim.
