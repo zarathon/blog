@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: `${siteUrl}/about`,
     siteName: '🧠 Devaneios do Zara',
     title: 'Sobre Mim - Zarathon Viana',
-    description: 'Profissional de tecnologia com mais de 10 anos de experiência em engenharia de software, gestão de times e liderança técnica.',
+    description: 'Profissional de tecnologia com mais de 20 anos de experiência em engenharia de software, gestão de times e liderança técnica.',
     images: [
       {
         url: `${siteUrl}/images/about/zara-blog-dots.jpg`,
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Sobre Mim - Zarathon Viana',
-    description: 'Profissional de tecnologia com mais de 10 anos de experiência em engenharia de software, gestão de times e liderança técnica.',
+    description: 'Profissional de tecnologia com mais de 20 anos de experiência em engenharia de software, gestão de times e liderança técnica.',
     images: [`${siteUrl}/images/about/zara-blog-dots.jpg`],
   },
 };
@@ -67,7 +67,7 @@ export default function AboutPage() {
               <h2>Zarathon Viana</h2>
 
               <p>
-                Profissional de tecnologia com mais de 10 anos de experiência em engenharia de software,
+                Profissional de tecnologia com mais de 20 anos de experiência em engenharia de software,
                 gestão de times e liderança técnica. Apaixonado por resolver problemas complexos e
                 construir times de alta performance.
               </p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
               <h3>Experiência</h3>
               <p>
                 Ao longo da minha carreira, trabalhei em diversos projetos desafiadores, desde startups
-                até grandes empresas. Minha especialidade é transformar ideias em produtos reais,
+                até grandes empresas, passando um bom tempo no serviço público federal. Minha especialidade é transformar ideias em produtos reais,
                 liderando times técnicos e tomando decisões arquiteturais críticas.
               </p>
 
@@ -106,7 +106,7 @@ export default function AboutPage() {
 
               <div className="flex gap-4 flex-wrap mt-8">
                 <Button asChild variant="default">
-                  <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer">
+                  <a href="https://linkedin.com/in/eusouozara" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                   </a>
                 </Button>
