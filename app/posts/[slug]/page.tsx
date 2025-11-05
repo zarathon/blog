@@ -35,8 +35,20 @@ export default async function Post({
           </Button>
 
           <Card>
+            {post.image && (
+              <div className="w-full flex justify-center pt-8 pb-4 px-8">
+                <div className="w-64 h-64 rounded-full overflow-hidden border-8 border-muted shadow-lg">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            )}
+
             <CardHeader>
-              <div className="flex items-center gap-2 mb-4">
+              <div className="flex items-center gap-2 mb-4 justify-center">
                 <Badge variant="secondary" className="flex items-center gap-1">
                   <Calendar className="h-3 w-3" />
                   <time>
@@ -48,7 +60,7 @@ export default async function Post({
                   </time>
                 </Badge>
               </div>
-              <CardTitle className="text-5xl md:text-6xl mb-6 font-heading leading-tight">
+              <CardTitle className="text-5xl md:text-6xl mb-6 font-heading leading-tight text-center">
                 📄 {post.title}
               </CardTitle>
               <Separator />
