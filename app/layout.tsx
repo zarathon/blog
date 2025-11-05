@@ -21,9 +21,15 @@ const fontHeading = Instrument_Serif({
   display: "swap",
 });
 
+const siteUrl = 'https://zarathon.github.io/blog';
+
 export const metadata: Metadata = {
-  title: "Devaneios do Zara",
-  description: "Blog sobre engenharia de software, tecnologia, carreira e mais",
+  title: {
+    default: "🧠 Devaneios do Zara",
+    template: "%s | Devaneios do Zara",
+  },
+  description: "Blog sobre engenharia de software, tecnologia, carreira e mais. Conteúdo real, baseado em experiência de guerra, para quem quer crescer de verdade na área de tecnologia.",
+  metadataBase: new URL(siteUrl),
   alternates: {
     types: {
       'application/rss+xml': [
@@ -36,6 +42,28 @@ export const metadata: Metadata = {
         { url: '/blog/feed.json', title: 'JSON Feed' },
       ],
     },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    url: siteUrl,
+    siteName: '🧠 Devaneios do Zara',
+    title: '🧠 Devaneios do Zara',
+    description: 'Blog sobre engenharia de software, tecnologia, carreira e mais. Conteúdo real, baseado em experiência de guerra.',
+    images: [
+      {
+        url: `${siteUrl}/images/about/profile.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Devaneios do Zara',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '🧠 Devaneios do Zara',
+    description: 'Blog sobre engenharia de software, tecnologia, carreira e mais.',
+    images: [`${siteUrl}/images/about/profile.jpg`],
   },
 };
 

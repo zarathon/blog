@@ -6,12 +6,63 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { ArrowLeft, Calendar } from 'lucide-react';
+import type { Metadata } from 'next';
+
+const siteUrl = 'https://zarathon.github.io/blog';
 
 export async function generateStaticParams() {
   const posts = getSortedPostsData();
   return posts.map((post) => ({
     slug: post.slug,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+
+  try {
+    const post = await getPostData(slug);
+    const postUrl = `${siteUrl}/posts/${slug}`;
+    const ogImage = post.image ? `${siteUrl}${post.image}` : `${siteUrl}/images/about/profile.jpg`;
+
+    return {
+      title: post.title,
+      description: post.excerpt,
+      openGraph: {
+        type: 'article',
+        locale: 'pt_BR',
+        url: postUrl,
+        siteName: '🧠 Devaneios do Zara',
+        title: post.title,
+        description: post.excerpt,
+        publishedTime: post.date,
+        authors: ['Zarathon Maia'],
+        tags: post.tags,
+        images: [
+          {
+            url: ogImage,
+            width: 1200,
+            height: 630,
+            alt: post.title,
+          },
+        ],
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: post.title,
+        description: post.excerpt,
+        images: [ogImage],
+      },
+    };
+  } catch (error) {
+    return {
+      title: 'Post não encontrado',
+    };
+  }
 }
 
 export default async function Post({

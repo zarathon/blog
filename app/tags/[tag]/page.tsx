@@ -6,12 +6,59 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { ArrowLeft, Calendar, Tag } from 'lucide-react';
+import type { Metadata } from 'next';
+
+const siteUrl = 'https://zarathon.github.io/blog';
 
 export async function generateStaticParams() {
   const tags = getAllTags();
   return tags.map((tag) => ({
     tag: tag,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ tag: string }>;
+}): Promise<Metadata> {
+  const { tag } = await params;
+  const posts = getPostsByTag(tag);
+  const postCount = posts.length;
+  const tagUrl = `${siteUrl}/tags/${tag}`;
+
+  if (postCount === 0) {
+    return {
+      title: 'Tag não encontrada',
+    };
+  }
+
+  return {
+    title: `#${tag}`,
+    description: `${postCount} ${postCount === 1 ? 'post' : 'posts'} sobre ${tag}`,
+    openGraph: {
+      type: 'website',
+      locale: 'pt_BR',
+      url: tagUrl,
+      siteName: '🧠 Devaneios do Zara',
+      title: `Posts sobre #${tag}`,
+      description: `Explore ${postCount} ${postCount === 1 ? 'post' : 'posts'} sobre ${tag} no blog Devaneios do Zara`,
+      images: [
+        {
+          url: `${siteUrl}/images/about/profile.jpg`,
+          width: 1200,
+          height: 630,
+          alt: `Posts sobre ${tag}`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `Posts sobre #${tag}`,
+      description: `Explore ${postCount} ${postCount === 1 ? 'post' : 'posts'} sobre ${tag}`,
+      images: [`${siteUrl}/images/about/profile.jpg`],
+    },
+  };
 }
 
 export default async function TagPage({

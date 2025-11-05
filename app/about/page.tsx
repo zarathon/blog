@@ -3,10 +3,35 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { ArrowLeft } from 'lucide-react';
+import type { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Sobre Mim - Devaneios do Zara',
-  description: 'Conheça mais sobre Zarathon Maia e sua trajetória em tecnologia',
+const siteUrl = 'https://zarathon.github.io/blog';
+
+export const metadata: Metadata = {
+  title: 'Sobre Mim',
+  description: 'Conheça mais sobre Zarathon Maia e sua trajetória em tecnologia. Mais de 10 anos de experiência em engenharia de software, gestão de times e liderança técnica.',
+  openGraph: {
+    type: 'profile',
+    locale: 'pt_BR',
+    url: `${siteUrl}/about`,
+    siteName: '🧠 Devaneios do Zara',
+    title: 'Sobre Mim - Zarathon Maia',
+    description: 'Profissional de tecnologia com mais de 10 anos de experiência em engenharia de software, gestão de times e liderança técnica.',
+    images: [
+      {
+        url: `${siteUrl}/images/about/profile.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Zarathon Maia',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sobre Mim - Zarathon Maia',
+    description: 'Profissional de tecnologia com mais de 10 anos de experiência em engenharia de software, gestão de times e liderança técnica.',
+    images: [`${siteUrl}/images/about/profile.jpg`],
+  },
 };
 
 export default function AboutPage() {
