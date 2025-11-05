@@ -2,7 +2,7 @@
 title: 'Voltei. E Vou Falar o Que Ninguém Fala.'
 date: '2025-11-05'
 excerpt: 'Voltando a escrever de uma maneira mais dedicada e não delicada!'
-image: '/blog/images/posts/exemplo.jpg'
+image: '/blog/images/posts/codecon-select.jpeg'
 # Coloque sua imagem em public/images/posts/ e atualize o caminho acima
 ---
 Cansei.
