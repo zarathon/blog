@@ -9,26 +9,26 @@ const siteUrl = 'https://zarathon.github.io/blog';
 
 export const metadata: Metadata = {
   title: 'Sobre Mim',
-  description: 'Conheça mais sobre Zarathon Maia e sua trajetória em tecnologia. Mais de 10 anos de experiência em engenharia de software, gestão de times e liderança técnica.',
+  description: 'Conheça mais sobre Zarathon Viana e sua trajetória em tecnologia. Mais de 10 anos de experiência em engenharia de software, gestão de times e liderança técnica.',
   openGraph: {
     type: 'profile',
     locale: 'pt_BR',
     url: `${siteUrl}/about`,
     siteName: '🧠 Devaneios do Zara',
-    title: 'Sobre Mim - Zarathon Maia',
+    title: 'Sobre Mim - Zarathon Viana',
     description: 'Profissional de tecnologia com mais de 10 anos de experiência em engenharia de software, gestão de times e liderança técnica.',
     images: [
       {
         url: `${siteUrl}/images/about/profile.jpg`,
         width: 1200,
         height: 630,
-        alt: 'Zarathon Maia',
+        alt: 'Zarathon Viana',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sobre Mim - Zarathon Maia',
+    title: 'Sobre Mim - Zarathon Viana',
     description: 'Profissional de tecnologia com mais de 10 anos de experiência em engenharia de software, gestão de times e liderança técnica.',
     images: [`${siteUrl}/images/about/profile.jpg`],
   },
@@ -51,7 +51,7 @@ export default function AboutPage() {
               <div className="w-48 h-48 rounded-full overflow-hidden border-8 border-muted shadow-lg mb-6">
                 <img
                   src="/blog/images/about/profile.jpg"
-                  alt="Zarathon Maia"
+                  alt="Zarathon Viana"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -64,7 +64,7 @@ export default function AboutPage() {
 
           <CardContent className="px-12 md:px-16 lg:px-20 py-10">
             <article className="prose prose-lg md:prose-xl prose-neutral dark:prose-invert max-w-none prose-headings:font-heading prose-headings:font-bold prose-p:leading-relaxed">
-              <h2>Zarathon Maia</h2>
+              <h2>Zarathon Viana</h2>
 
               <p>
                 Profissional de tecnologia com mais de 10 anos de experiência em engenharia de software,

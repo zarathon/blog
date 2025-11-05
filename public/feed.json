@@ -4,9 +4,9 @@
     "home_page_url": "https://zarathon.github.io/blog",
     "feed_url": "https://zarathon.github.io/blog/feed.json",
     "description": "Blog sobre engenharia de software, tecnologia, carreira e mais. Conteúdo real, baseado em experiência de guerra, para quem quer crescer de verdade na área de tecnologia.",
-    "icon": "https://zarathon.github.io/blog/images/about/profile.jpg",
+    "icon": "https://zarathon.github.io/blog/og-default.svg",
     "author": {
-        "name": "Zarathon Maia",
+        "name": "Zarathon Viana",
         "url": "https://zarathon.github.io/blog/about"
     },
     "items": [
@@ -19,7 +19,7 @@
             "image": "https://zarathon.github.io/blog/blog/images/posts/codecon-select.jpeg",
             "date_modified": "2025-11-05T00:00:00.000Z",
             "author": {
-                "name": "Zarathon Maia",
+                "name": "Zarathon Viana",
                 "url": "https://zarathon.github.io/blog/about"
             },
             "tags": [

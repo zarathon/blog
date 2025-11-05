@@ -45,7 +45,7 @@ export async function generateMetadata({
       description: `Explore ${postCount} ${postCount === 1 ? 'post' : 'posts'} sobre ${tag} no blog Devaneios do Zara`,
       images: [
         {
-          url: `${siteUrl}/images/about/profile.jpg`,
+          url: `${siteUrl}/og-default.svg`,
           width: 1200,
           height: 630,
           alt: `Posts sobre ${tag}`,
@@ -56,7 +56,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: `Posts sobre #${tag}`,
       description: `Explore ${postCount} ${postCount === 1 ? 'post' : 'posts'} sobre ${tag}`,
-      images: [`${siteUrl}/images/about/profile.jpg`],
+      images: [`${siteUrl}/og-default.svg`],
     },
   };
 }

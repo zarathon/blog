@@ -5,16 +5,16 @@
     <updated>2025-11-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
-        <name>Zarathon Maia</name>
+        <name>Zarathon Viana</name>
         <email>contato@example.com</email>
         <uri>https://zarathon.github.io/blog/about</uri>
     </author>
     <link rel="alternate" href="https://zarathon.github.io/blog"/>
     <link rel="self" href="https://zarathon.github.io/blog/atom.xml"/>
     <subtitle>Blog sobre engenharia de software, tecnologia, carreira e mais. Conteúdo real, baseado em experiência de guerra, para quem quer crescer de verdade na área de tecnologia.</subtitle>
-    <logo>https://zarathon.github.io/blog/images/about/profile.jpg</logo>
+    <logo>https://zarathon.github.io/blog/og-default.svg</logo>
     <icon>https://zarathon.github.io/blog/icon.svg</icon>
-    <rights>All rights reserved 2025, Zarathon Maia</rights>
+    <rights>All rights reserved 2025, Zarathon Viana</rights>
     <entry>
         <title type="html"><![CDATA[Voltei. E Vou Falar o Que Ninguém Fala.]]></title>
         <id>https://zarathon.github.io/blog/posts/primeiro-post</id>
@@ -24,7 +24,7 @@
         <summary type="html"><![CDATA[Voltando a escrever de uma maneira mais dedicada e não delicada!]]></summary>
         <content type="html"><![CDATA[Voltando a escrever de uma maneira mais dedicada e não delicada!]]></content>
         <author>
-            <name>Zarathon Maia</name>
+            <name>Zarathon Viana</name>
             <email>contato@example.com</email>
             <uri>https://zarathon.github.io/blog/about</uri>
         </author>

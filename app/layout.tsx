@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description: 'Blog sobre engenharia de software, tecnologia, carreira e mais. Conteúdo real, baseado em experiência de guerra.',
     images: [
       {
-        url: `${siteUrl}/images/about/profile.jpg`,
+        url: `${siteUrl}/og-default.svg`,
         width: 1200,
         height: 630,
         alt: 'Devaneios do Zara',
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '🧠 Devaneios do Zara',
     description: 'Blog sobre engenharia de software, tecnologia, carreira e mais.',
-    images: [`${siteUrl}/images/about/profile.jpg`],
+    images: [`${siteUrl}/og-default.svg`],
   },
 };
 

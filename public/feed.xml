@@ -10,10 +10,10 @@
         <language>pt-BR</language>
         <image>
             <title>🧠 Devaneios do Zara</title>
-            <url>https://zarathon.github.io/blog/images/about/profile.jpg</url>
+            <url>https://zarathon.github.io/blog/og-default.svg</url>
             <link>https://zarathon.github.io/blog</link>
         </image>
-        <copyright>All rights reserved 2025, Zarathon Maia</copyright>
+        <copyright>All rights reserved 2025, Zarathon Viana</copyright>
         <item>
             <title><![CDATA[Voltei. E Vou Falar o Que Ninguém Fala.]]></title>
             <link>https://zarathon.github.io/blog/posts/primeiro-post</link>
@@ -21,7 +21,7 @@
             <pubDate>Wed, 05 Nov 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Voltando a escrever de uma maneira mais dedicada e não delicada!]]></description>
             <content:encoded><![CDATA[Voltando a escrever de uma maneira mais dedicada e não delicada!]]></content:encoded>
-            <author>contato@example.com (Zarathon Maia)</author>
+            <author>contato@example.com (Zarathon Viana)</author>
             <category>carreira</category>
             <category>reflexoes</category>
             <category>comunidade</category>

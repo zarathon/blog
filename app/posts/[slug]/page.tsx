@@ -27,7 +27,7 @@ export async function generateMetadata({
   try {
     const post = await getPostData(slug);
     const postUrl = `${siteUrl}/posts/${slug}`;
-    const ogImage = post.image ? `${siteUrl}${post.image}` : `${siteUrl}/images/about/profile.jpg`;
+    const ogImage = post.image ? `${siteUrl}${post.image}` : `${siteUrl}/og-default.svg`;
 
     return {
       title: post.title,
@@ -40,7 +40,7 @@ export async function generateMetadata({
         title: post.title,
         description: post.excerpt,
         publishedTime: post.date,
-        authors: ['Zarathon Maia'],
+        authors: ['Zarathon Viana'],
         tags: post.tags,
         images: [
           {

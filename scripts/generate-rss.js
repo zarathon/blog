@@ -44,9 +44,9 @@ function generateRSS() {
     id: siteUrl,
     link: siteUrl,
     language: "pt-BR",
-    image: `${siteUrl}/images/about/profile.jpg`,
+    image: `${siteUrl}/og-default.svg`,
     favicon: `${siteUrl}/icon.svg`,
-    copyright: `All rights reserved ${new Date().getFullYear()}, Zarathon Maia`,
+    copyright: `All rights reserved ${new Date().getFullYear()}, Zarathon Viana`,
     updated: new Date(posts[0]?.date || new Date()),
     feedLinks: {
       rss2: `${siteUrl}/feed.xml`,
@@ -54,7 +54,7 @@ function generateRSS() {
       atom: `${siteUrl}/atom.xml`,
     },
     author: {
-      name: "Zarathon Maia",
+      name: "Zarathon Viana",
       email: "contato@example.com",
       link: `${siteUrl}/about`,
     },
@@ -72,7 +72,7 @@ function generateRSS() {
       content: post.excerpt, // Usando excerpt, não full content
       author: [
         {
-          name: "Zarathon Maia",
+          name: "Zarathon Viana",
           email: "contato@example.com",
           link: `${siteUrl}/about`,
         },

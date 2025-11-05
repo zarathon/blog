@@ -1,0 +1,17 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+
+  <!-- Brain emoji -->
+  <text x="600" y="380" font-size="200" text-anchor="middle">🧠</text>
+
+  <!-- Title -->
+  <text x="600" y="500" font-size="48" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">
+    Devaneios do Zara
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="550" font-size="24" text-anchor="middle" fill="#999999" font-family="system-ui, -apple-system, sans-serif">
+    Blog sobre engenharia de software e tecnologia
+  </text>
+</svg>
