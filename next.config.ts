@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   },
   // Se o repositório for username.github.io, deixe basePath vazio
   // Se for username.github.io/blog, descomente a linha abaixo
-  // basePath: '/blog',
+  basePath: '/blog',
 };
 
 export default nextConfig;
