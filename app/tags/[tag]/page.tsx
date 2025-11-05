@@ -1,32 +1,61 @@
 import Link from 'next/link';
-import { getSortedPostsData } from '@/lib/posts';
+import { getPostsByTag, getAllTags } from '@/lib/posts';
+import { notFound } from 'next/navigation';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
-import { Calendar } from 'lucide-react';
+import { ArrowLeft, Calendar, Tag } from 'lucide-react';
 
-export default function Home() {
-  const posts = getSortedPostsData();
+export async function generateStaticParams() {
+  const tags = getAllTags();
+  return tags.map((tag) => ({
+    tag: tag,
+  }));
+}
 
-  return (
-    <div className="min-h-screen bg-background">
-      {/* Header: full width com padding generoso */}
-      <header className="max-w-full mx-auto px-12 md:px-16 lg:px-20 py-16 mb-12">
-        <div className="text-center mb-20">
-          <h1 className="text-7xl md:text-8xl font-bold mb-6 tracking-tight font-heading leading-none">
-            🧠 Devaneios do Zara
-          </h1>
-          <p className="text-2xl md:text-3xl text-muted-foreground mt-6">
-            Blog sobre engenharia de software, tecnologia, carreira e mais
-          </p>
-        </div>
-        <Separator />
-      </header>
+export default async function TagPage({
+  params,
+}: {
+  params: Promise<{ tag: string }>;
+}) {
+  const { tag } = await params;
 
-      {/* Lista de posts: bem largo */}
-      <main className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 pb-16">
-        <div className="space-y-8">
+  try {
+    const posts = getPostsByTag(tag);
+
+    if (posts.length === 0) {
+      notFound();
+    }
+
+    return (
+      <div className="min-h-screen bg-background">
+        {/* Header */}
+        <header className="max-w-full mx-auto px-12 md:px-16 lg:px-20 py-16 mb-12">
+          <Button asChild variant="ghost" className="mb-8">
+            <Link href="/">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Voltar para home
+            </Link>
+          </Button>
+
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <Tag className="h-12 w-12" />
+              <h1 className="text-6xl md:text-7xl font-bold tracking-tight font-heading leading-none">
+                #{tag}
+              </h1>
+            </div>
+            <p className="text-xl md:text-2xl text-muted-foreground">
+              {posts.length} {posts.length === 1 ? 'post encontrado' : 'posts encontrados'}
+            </p>
+          </div>
+          <Separator />
+        </header>
+
+        {/* Lista de posts */}
+        <main className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 pb-16">
+          <div className="space-y-8">
             {posts.map((post) => (
               <Card key={post.slug} className="hover:shadow-lg transition-shadow">
                 <div className="flex gap-6">
@@ -54,14 +83,17 @@ export default function Home() {
                       </CardDescription>
                       {post.tags && post.tags.length > 0 && (
                         <div className="flex flex-wrap gap-2 mt-4">
-                          {post.tags.map((tag) => (
+                          {post.tags.map((postTag) => (
                             <Link
-                              key={tag}
-                              href={`/tags/${tag}`}
+                              key={postTag}
+                              href={`/tags/${postTag}`}
                               className="inline-block"
                             >
-                              <Badge variant="outline" className="hover:bg-accent transition-colors">
-                                #{tag}
+                              <Badge
+                                variant={postTag === tag ? "default" : "outline"}
+                                className="hover:bg-accent transition-colors"
+                              >
+                                #{postTag}
                               </Badge>
                             </Link>
                           ))}
@@ -90,23 +122,27 @@ export default function Home() {
                 </div>
               </Card>
             ))}
-        </div>
-      </main>
-
-      {/* Footer */}
-      <footer className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 mt-20 pb-16">
-        <Separator className="mb-8" />
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
-            Feito com Next.js e hospedado no GitHub Pages
-          </p>
-          <div className="flex gap-4">
-            <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Sobre Mim
-            </Link>
           </div>
-        </div>
-      </footer>
-    </div>
-  );
+        </main>
+
+        {/* Footer */}
+        <footer className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 mt-20 pb-16">
+          <Separator className="mb-8" />
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <Button asChild variant="outline">
+              <Link href="/">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Voltar para home
+              </Link>
+            </Button>
+            <p className="text-sm text-muted-foreground">
+              Mostrando todos os posts com a tag #{tag}
+            </p>
+          </div>
+        </footer>
+      </div>
+    );
+  } catch (error) {
+    notFound();
+  }
 }

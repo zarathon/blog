@@ -12,6 +12,7 @@ export interface PostData {
   date: string;
   excerpt: string;
   image?: string;
+  tags?: string[];
   content?: string;
 }
 
@@ -38,6 +39,7 @@ export function getSortedPostsData(): PostData[] {
         date: matterResult.data.date as string,
         excerpt: matterResult.data.excerpt as string,
         image: matterResult.data.image as string | undefined,
+        tags: matterResult.data.tags as string[] | undefined,
       };
     });
 
@@ -84,6 +86,27 @@ export async function getPostData(slug: string): Promise<PostData> {
     date: matterResult.data.date as string,
     excerpt: matterResult.data.excerpt as string,
     image: matterResult.data.image as string | undefined,
+    tags: matterResult.data.tags as string[] | undefined,
     content: contentHtml,
   };
+}
+
+// Função para obter todas as tags únicas
+export function getAllTags(): string[] {
+  const posts = getSortedPostsData();
+  const tagsSet = new Set<string>();
+
+  posts.forEach(post => {
+    if (post.tags) {
+      post.tags.forEach(tag => tagsSet.add(tag));
+    }
+  });
+
+  return Array.from(tagsSet).sort();
+}
+
+// Função para obter posts por tag
+export function getPostsByTag(tag: string): PostData[] {
+  const posts = getSortedPostsData();
+  return posts.filter(post => post.tags?.includes(tag));
 }

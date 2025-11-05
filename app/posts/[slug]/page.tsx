@@ -63,6 +63,21 @@ export default async function Post({
               <CardTitle className="text-5xl md:text-6xl mb-6 font-heading leading-tight text-center">
                 📄 {post.title}
               </CardTitle>
+              {post.tags && post.tags.length > 0 && (
+                <div className="flex flex-wrap gap-2 justify-center mb-6">
+                  {post.tags.map((tag) => (
+                    <Link
+                      key={tag}
+                      href={`/tags/${tag}`}
+                      className="inline-block"
+                    >
+                      <Badge variant="outline" className="hover:bg-accent transition-colors">
+                        #{tag}
+                      </Badge>
+                    </Link>
+                  ))}
+                </div>
+              )}
               <Separator />
             </CardHeader>
 
