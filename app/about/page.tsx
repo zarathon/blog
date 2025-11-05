@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Sobre Mim - Zarathon Viana',
     description: 'Profissional de tecnologia com mais de 10 anos de experiência em engenharia de software, gestão de times e liderança técnica.',
-    images: [`${siteUrl}/images/about/profile.jpg`],
+    images: [`${siteUrl}/images/about/zara-blog-dots.jpg`],
   },
 };
 
