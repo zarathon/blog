@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'Profissional de tecnologia com mais de 10 anos de experiência em engenharia de software, gestão de times e liderança técnica.',
     images: [
       {
-        url: `${siteUrl}/images/about/profile.jpg`,
+        url: `${siteUrl}/images/about/zara-blog-dots.jpg`,
         width: 1200,
         height: 630,
         alt: 'Zarathon Viana',
@@ -50,7 +50,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center mb-8">
               <div className="w-48 h-48 rounded-full overflow-hidden border-8 border-muted shadow-lg mb-6">
                 <img
-                  src="/blog/images/about/profile.jpg"
+                  src="/blog/images/about/zara-blog-dots.jpg"
                   alt="Zarathon Viana"
                   className="w-full h-full object-cover"
                 />
