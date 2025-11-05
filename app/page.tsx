@@ -104,6 +104,9 @@ export default function Home() {
             <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Sobre Mim
             </Link>
+            <Link href="https://www.amazon.com.br/Antes-Que-Seja-Tarde-Tecnologia-ebook/dp/B0DQVTCQ5Z/" className="text-sm text-muted-foreground hover:text-foreground transition-colors" target="_blank" rel="noopener noreferrer">
+              Meu Livro
+            </Link>
             <Link href="/feed.xml" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               RSS
             </Link>
