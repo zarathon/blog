@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { GoogleAnalytics } from "@/components/analytics";
 
 // Fonte para texto normal - DM Mono é monoespaçada e moderna
 const fontSans = DM_Mono({
@@ -35,6 +36,9 @@ export default function RootLayout({
       <body
         className={`${fontSans.variable} ${fontHeading.variable} font-sans antialiased`}
       >
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId="G-6867JMG0QN" />
+        )}
         <ThemeToggle />
         {children}
       </body>

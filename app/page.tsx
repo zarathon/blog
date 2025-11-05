@@ -15,10 +15,10 @@ export default function Home() {
       <header className="max-w-full mx-auto px-12 md:px-16 lg:px-20 py-16 mb-12">
         <div className="text-center mb-20">
           <h1 className="text-7xl md:text-8xl font-bold mb-6 tracking-tight font-heading leading-none">
-            Meu Blog
+            Devaneios do Zara
           </h1>
           <p className="text-2xl md:text-3xl text-muted-foreground mt-6">
-            Posts sobre desenvolvimento, tecnologia e mais
+            Blog sobre engenharia de software, tecnologia, carreira e mais
           </p>
         </div>
         <Separator />
