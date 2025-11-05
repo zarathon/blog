@@ -21,8 +21,8 @@ const fontHeading = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Meu Blog",
-  description: "Blog sobre desenvolvimento, tecnologia e mais",
+  title: "Devaneios do Zara",
+  description: "Blog sobre engenharia de software, tecnologia, carreira e mais",
 };
 
 export default function RootLayout({

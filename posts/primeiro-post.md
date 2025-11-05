@@ -1,30 +1,28 @@
 ---
-title: 'Meu Primeiro Post'
+title: 'Voltei. E Vou Falar o Que Ninguém Fala.'
 date: '2025-11-05'
-excerpt: 'Este é o primeiro post do meu blog criado com Next.js e GitHub Pages'
+excerpt: 'Voltando a escrever de uma maneira mais dedicada e não delicada!'
 ---
+Cansei.
 
-# Bem-vindo ao meu blog!
+Cansei de ver evento de tecnologia que é mais do mesmo. Palestrinha genérica sobre "agilidade", talk motivacional sem substância, aquele networking forçado que não leva a lugar nenhum. E o pior: a galera paga caro pra ouvir o óbvio embalado em slide bonito.
 
-Este é um **post de exemplo** criado com Next.js e hospedado no GitHub Pages.
+Passei os últimos 10 anos mergulhado no trabalho, vivendo a guerra diária de quem realmente faz engenharia de software acontecer. Gestão de times, decisões técnicas fodidas, liderança de verdade - não aquela de livro de autoajuda. Acabei deixando a produção de conteúdo de lado porque estava ocupado demais resolvendo problemas reais.
 
-## Características
+Mas algo mudou.
 
-- ✅ Next.js 16 com App Router
-- ✅ TypeScript
-- ✅ Tailwind CSS
-- ✅ Exportação estática para GitHub Pages
-- ✅ Suporte a Markdown
+Esse fim de semana participei da Codecon Select e tomei um choque. Finalmente um evento que faz sentido. Gente boa, discussões densas, conteúdo pra quem já viveu a porrada e quer trocar ideia de alto nível. Nada de superficialidade, nada de vendedor de curso disfarçado de palestrante. Foi arretado demais ver que dá pra fazer evento de qualidade no Brasil.
 
-## Como funciona?
+E aí me veio a pergunta: por que os eventos bons são tão raros e os ruins se multiplicam feito praga?
 
-Os posts são escritos em Markdown e processados com `gray-matter` e `remark`. O Next.js gera páginas estáticas que podem ser hospedadas gratuitamente no GitHub Pages.
+A resposta é simples: tem muito esperto surfando na onda do tech pra vender ilusão. Prometem carreira meteórica, falam de IA como se fosse magia, ensinam frameworks que vão estar mortos daqui 6 meses. E o pior: a galera que tá começando não tem referência pra separar o joio do trigo.
 
-```typescript
-// Exemplo de código
-const hello = () => {
-  console.log('Hello, World!');
-};
-```
+Por isso voltei.
 
-**Aproveite seu novo blog!**
+Esse blog vai ser meu diário de guerra. Vou falar sobre engenharia de software, gestão de times, liderança em tech, IA, e todas as tretas que ninguém conta. Sem mimimi, sem vender sonho, sem aquele papo de coach. O que é, é. O que não é, não é.
+
+Não vou competir com LinkedIn nem com algoritmo de rede social. Aqui é meu espaço, meu registro, meu jeito de passar pra frente o que aprendi na porrada. Se tu é dev júnior querendo crescer de verdade, se tu é sênior virando líder e sem saber por onde ir, se tu trabalha com produto ou QA e quer entender melhor essa bagaça toda - esse espaço é pra ti.
+
+Chega de besteira. Vamo falar do que importa.
+
+Bem-vindo aos Devaneios do Zara.
