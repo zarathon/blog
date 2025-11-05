@@ -139,4 +139,33 @@
   .dark body::before {
     opacity: 0.05;
   }
+
+  /* Floating effect for headers */
+  h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Floating effect for images */
+  img {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .dark img {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Subtle hover effect for images */
+  img:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .dark img:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  }
 }
