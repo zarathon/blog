@@ -56,13 +56,18 @@ npm run dev
 title: 'Título do Post'
 date: '2025-11-05'
 excerpt: 'Breve descrição do post'
-image: 'https://example.com/image.jpg'  # Opcional - URL da imagem
+image: '/blog/images/posts/sua-imagem.jpg'  # Opcional - imagem local
 ---
 
 # Conteúdo do post
 
 Escreva seu conteúdo aqui em Markdown...
 ```
+
+**Para usar imagens locais:**
+1. Coloque suas imagens em `public/images/posts/`
+2. Referencie com `/blog/images/posts/nome-da-imagem.jpg`
+3. Veja `IMAGES.md` para guia completo
 
 2. O post aparecerá automaticamente na lista
 

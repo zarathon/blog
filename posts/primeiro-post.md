@@ -2,7 +2,8 @@
 title: 'Voltei. E Vou Falar o Que Ninguém Fala.'
 date: '2025-11-05'
 excerpt: 'Voltando a escrever de uma maneira mais dedicada e não delicada!'
-image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=400&fit=crop'
+image: '/blog/images/posts/exemplo.jpg'
+# Coloque sua imagem em public/images/posts/ e atualize o caminho acima
 ---
 Cansei.
 
