@@ -134,7 +134,7 @@ export default async function Post({
 
             <CardContent className="px-4 sm:px-8 md:px-16 lg:px-20 py-8 sm:py-10">
               <article
-                className="prose prose-base sm:prose-lg md:prose-xl prose-neutral dark:prose-invert max-w-none prose-headings:font-heading prose-headings:font-bold prose-h1:text-3xl sm:text-4xl md:text-5xl prose-h2:text-2xl sm:text-3xl md:text-4xl prose-h3:text-xl sm:text-2xl md:text-3xl prose-p:leading-relaxed prose-a:text-primary prose-code:text-foreground prose-pre:bg-muted"
+                className="prose prose-base sm:prose-lg prose-neutral dark:prose-invert max-w-none prose-headings:font-heading prose-headings:font-bold prose-h1:text-3xl sm:text-4xl md:text-5xl prose-h2:text-2xl sm:text-3xl md:text-4xl prose-h3:text-xl sm:text-2xl md:text-3xl prose-p:leading-relaxed prose-a:text-primary prose-code:text-foreground prose-pre:bg-muted"
                 dangerouslySetInnerHTML={{ __html: post.content || '' }}
               />
             </CardContent>
