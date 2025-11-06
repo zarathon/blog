@@ -4,7 +4,7 @@
         <title>🧠 Devaneios do Zara</title>
         <link>https://zarathon.github.io/blog</link>
         <description>Blog sobre engenharia de software, tecnologia, carreira e mais. Conteúdo real, baseado em experiência de guerra, para quem quer crescer de verdade na área de tecnologia.</description>
-        <lastBuildDate>Wed, 05 Nov 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 06 Nov 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>pt-BR</language>
@@ -14,6 +14,31 @@
             <link>https://zarathon.github.io/blog</link>
         </image>
         <copyright>All rights reserved 2025, Zarathon Viana</copyright>
+        <item>
+            <title><![CDATA[A Grande Migração: Gurus do Marketing Digital Estão Pulando pro Mundo do Software (e Você Precisa Ficar Esperto)]]></title>
+            <link>https://zarathon.github.io/blog/posts/mercado-mkt-digital-mudando</link>
+            <guid isPermaLink="false">https://zarathon.github.io/blog/posts/mercado-mkt-digital-mudando</guid>
+            <pubDate>Thu, 06 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Tô observando um movimento nos últimos anos que não dá pra ignorar mais não, viu. É daqueles negócios que quando você percebe, já tá todo mundo fazendo. A turma dos gurus de marketing digital, aquela galera que vendia curso prometendo te deixar milionário em 7 dias, tá mudando de jogo. E a mudança é radical.']]></description>
+            <content:encoded><![CDATA[Tô observando um movimento nos últimos anos que não dá pra ignorar mais não, viu. É daqueles negócios que quando você percebe, já tá todo mundo fazendo. A turma dos gurus de marketing digital, aquela galera que vendia curso prometendo te deixar milionário em 7 dias, tá mudando de jogo. E a mudança é radical.']]></content:encoded>
+            <author>contato@example.com (Zarathon Viana)</author>
+            <category>marketing-digital</category>
+            <category>mercado</category>
+            <category>tech</category>
+            <enclosure url="https://zarathon.github.io/blog/blog/images/posts/furacao.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Engenheiro de Software existe sim, e quem diz que não existe tá preso no século passado.]]></title>
+            <link>https://zarathon.github.io/blog/posts/engenharia-de-software-existe</link>
+            <guid isPermaLink="false">https://zarathon.github.io/blog/posts/engenharia-de-software-existe</guid>
+            <pubDate>Thu, 06 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Engenheiro de Software é quem faz engenharia de software como trabalho, certo? Simples assim. Mas tem uma galera que insiste que isso não existe. O argumento? "Ah, mas não tem CREA, não é tangível, não constrói prédio..."]]></description>
+            <content:encoded><![CDATA[Engenheiro de Software é quem faz engenharia de software como trabalho, certo? Simples assim. Mas tem uma galera que insiste que isso não existe. O argumento? "Ah, mas não tem CREA, não é tangível, não constrói prédio..."]]></content:encoded>
+            <author>contato@example.com (Zarathon Viana)</author>
+            <category>engenharia-de-software</category>
+            <category>historia</category>
+            <enclosure url="https://zarathon.github.io/blog/blog/images/posts/tijolo.png" length="0" type="image/png"/>
+        </item>
         <item>
             <title><![CDATA[Voltei. E Vou Falar o Que Ninguém Fala.]]></title>
             <link>https://zarathon.github.io/blog/posts/primeiro-post</link>

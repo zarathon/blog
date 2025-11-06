@@ -78,22 +78,22 @@ export default async function TagPage({
     return (
       <div className="min-h-screen bg-background">
         {/* Header */}
-        <header className="max-w-full mx-auto px-12 md:px-16 lg:px-20 py-16 mb-12">
-          <Button asChild variant="ghost" className="mb-8">
+        <header className="max-w-full mx-auto px-4 sm:px-8 md:px-16 lg:px-20 py-12 sm:py-16 mb-8 sm:mb-12">
+          <Button asChild variant="ghost" className="mb-6 sm:mb-8">
             <Link href="/">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Voltar para home
             </Link>
           </Button>
 
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <Tag className="h-12 w-12" />
-              <h1 className="text-6xl md:text-7xl font-bold tracking-tight font-heading leading-none">
+          <div className="text-center mb-8 sm:mb-12">
+            <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
+              <Tag className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12" />
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight font-heading leading-none">
                 #{tag}
               </h1>
             </div>
-            <p className="text-xl md:text-2xl text-muted-foreground">
+            <p className="text-base sm:text-lg md:text-2xl text-muted-foreground">
               {posts.length} {posts.length === 1 ? 'post encontrado' : 'posts encontrados'}
             </p>
           </div>
@@ -101,7 +101,7 @@ export default async function TagPage({
         </header>
 
         {/* Lista de posts */}
-        <main className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 pb-16">
+        <main className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 pb-16">
           <div className="space-y-8">
             {posts.map((post) => (
               <Card key={post.slug} className="hover:shadow-lg transition-shadow">
@@ -120,7 +120,7 @@ export default async function TagPage({
                           </time>
                         </Badge>
                       </div>
-                      <CardTitle className="text-3xl md:text-4xl font-heading leading-tight">
+                      <CardTitle className="text-2xl sm:text-3xl md:text-4xl font-heading leading-tight">
                         <Link href={`/posts/${post.slug}`} className="hover:underline">
                           📄 {post.title}
                         </Link>
@@ -173,7 +173,7 @@ export default async function TagPage({
         </main>
 
         {/* Footer */}
-        <footer className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 mt-20 pb-16">
+        <footer className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 mt-20 pb-16">
           <Separator className="mb-8" />
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <Button asChild variant="outline">

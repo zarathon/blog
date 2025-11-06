@@ -77,8 +77,8 @@ export default async function Post({
 
     return (
       <div className="min-h-screen bg-background">
-        <div className="max-w-6xl mx-auto px-8 md:px-12 lg:px-16 py-16">
-          <Button asChild variant="ghost" className="mb-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-16">
+          <Button asChild variant="ghost" className="mb-8 sm:mb-12">
             <Link href="/">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Voltar para home
@@ -111,7 +111,7 @@ export default async function Post({
                   </time>
                 </Badge>
               </div>
-              <CardTitle className="text-5xl md:text-6xl mb-6 font-heading leading-tight text-center">
+              <CardTitle className="text-3xl sm:text-4xl md:text-6xl mb-4 sm:mb-6 font-heading leading-tight text-center">
                 📄 {post.title}
               </CardTitle>
               {post.tags && post.tags.length > 0 && (
@@ -132,9 +132,9 @@ export default async function Post({
               <Separator />
             </CardHeader>
 
-            <CardContent className="px-12 md:px-16 lg:px-20 py-10">
+            <CardContent className="px-4 sm:px-8 md:px-16 lg:px-20 py-8 sm:py-10">
               <article
-                className="prose prose-lg md:prose-xl prose-neutral dark:prose-invert max-w-none prose-headings:font-heading prose-headings:font-bold prose-h1:text-5xl prose-h2:text-4xl prose-h3:text-3xl prose-p:leading-relaxed prose-a:text-primary prose-code:text-foreground prose-pre:bg-muted"
+                className="prose prose-base sm:prose-lg md:prose-xl prose-neutral dark:prose-invert max-w-none prose-headings:font-heading prose-headings:font-bold prose-h1:text-3xl sm:text-4xl md:text-5xl prose-h2:text-2xl sm:text-3xl md:text-4xl prose-h3:text-xl sm:text-2xl md:text-3xl prose-p:leading-relaxed prose-a:text-primary prose-code:text-foreground prose-pre:bg-muted"
                 dangerouslySetInnerHTML={{ __html: post.content || '' }}
               />
             </CardContent>

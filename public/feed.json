@@ -11,6 +11,41 @@
     },
     "items": [
         {
+            "id": "https://zarathon.github.io/blog/posts/mercado-mkt-digital-mudando",
+            "content_html": "Tô observando um movimento nos últimos anos que não dá pra ignorar mais não, viu. É daqueles negócios que quando você percebe, já tá todo mundo fazendo. A turma dos gurus de marketing digital, aquela galera que vendia curso prometendo te deixar milionário em 7 dias, tá mudando de jogo. E a mudança é radical.'",
+            "url": "https://zarathon.github.io/blog/posts/mercado-mkt-digital-mudando",
+            "title": "A Grande Migração: Gurus do Marketing Digital Estão Pulando pro Mundo do Software (e Você Precisa Ficar Esperto)",
+            "summary": "Tô observando um movimento nos últimos anos que não dá pra ignorar mais não, viu. É daqueles negócios que quando você percebe, já tá todo mundo fazendo. A turma dos gurus de marketing digital, aquela galera que vendia curso prometendo te deixar milionário em 7 dias, tá mudando de jogo. E a mudança é radical.'",
+            "image": "https://zarathon.github.io/blog/blog/images/posts/furacao.png",
+            "date_modified": "2025-11-06T00:00:00.000Z",
+            "author": {
+                "name": "Zarathon Viana",
+                "url": "https://zarathon.github.io/blog/about"
+            },
+            "tags": [
+                "marketing-digital",
+                "mercado",
+                "tech"
+            ]
+        },
+        {
+            "id": "https://zarathon.github.io/blog/posts/engenharia-de-software-existe",
+            "content_html": "Engenheiro de Software é quem faz engenharia de software como trabalho, certo? Simples assim. Mas tem uma galera que insiste que isso não existe. O argumento? \"Ah, mas não tem CREA, não é tangível, não constrói prédio...\"",
+            "url": "https://zarathon.github.io/blog/posts/engenharia-de-software-existe",
+            "title": "Engenheiro de Software existe sim, e quem diz que não existe tá preso no século passado.",
+            "summary": "Engenheiro de Software é quem faz engenharia de software como trabalho, certo? Simples assim. Mas tem uma galera que insiste que isso não existe. O argumento? \"Ah, mas não tem CREA, não é tangível, não constrói prédio...\"",
+            "image": "https://zarathon.github.io/blog/blog/images/posts/tijolo.png",
+            "date_modified": "2025-11-06T00:00:00.000Z",
+            "author": {
+                "name": "Zarathon Viana",
+                "url": "https://zarathon.github.io/blog/about"
+            },
+            "tags": [
+                "engenharia-de-software",
+                "historia"
+            ]
+        },
+        {
             "id": "https://zarathon.github.io/blog/posts/primeiro-post",
             "content_html": "Voltando a escrever de uma maneira mais dedicada e não delicada!",
             "url": "https://zarathon.github.io/blog/posts/primeiro-post",

@@ -12,12 +12,12 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header: full width com padding generoso */}
-      <header className="max-w-full mx-auto px-12 md:px-16 lg:px-20 py-16 mb-12">
-        <div className="text-center mb-20">
-          <h1 className="text-7xl md:text-8xl font-bold mb-6 tracking-tight font-heading leading-none">
+      <header className="max-w-full mx-auto px-4 sm:px-8 md:px-16 lg:px-20 py-12 sm:py-16 mb-8 sm:mb-12">
+        <div className="text-center mb-12 sm:mb-20">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold mb-4 sm:mb-6 tracking-tight font-heading leading-none">
             🧠 Devaneios do Zara
           </h1>
-          <p className="text-2xl md:text-3xl text-muted-foreground mt-6">
+          <p className="text-lg sm:text-xl md:text-3xl text-muted-foreground mt-4 sm:mt-6">
             Blog sobre engenharia de software, tecnologia, carreira e mais
           </p>
         </div>
@@ -25,7 +25,7 @@ export default function Home() {
       </header>
 
       {/* Lista de posts: bem largo */}
-      <main className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 pb-16">
+      <main className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 pb-16">
         <div className="space-y-8">
             {posts.map((post) => (
               <Card key={post.slug} className="hover:shadow-lg transition-shadow">
@@ -44,7 +44,7 @@ export default function Home() {
                           </time>
                         </Badge>
                       </div>
-                      <CardTitle className="text-3xl md:text-4xl font-heading leading-tight">
+                      <CardTitle className="text-2xl sm:text-3xl md:text-4xl font-heading leading-tight">
                         <Link href={`/posts/${post.slug}`} className="hover:underline">
                           📄 {post.title}
                         </Link>
@@ -94,7 +94,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 mt-20 pb-16">
+      <footer className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 mt-20 pb-16">
         <Separator className="mb-8" />
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
