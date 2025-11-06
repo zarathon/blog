@@ -5,6 +5,7 @@ excerpt: Tô observando um movimento nos últimos anos que não dá pra ignorar 
 image: '/blog/images/posts/furacao.png'
 tags: ['marketing-digital', 'mercado', 'tech']
 # Coloque sua imagem em public/images/posts/ e atualize o caminho acima
+---
 Tô observando um movimento nos últimos anos que não dá pra ignorar mais não, viu. É daqueles negócios que quando você percebe, já tá todo mundo fazendo. A turma dos gurus de marketing digital, aquela galera que vendia curso prometendo te deixar milionário em 7 dias, tá mudando de jogo. E a mudança é radical.
 
 O mercado de infoproduto tá dando as últimas. E quando eu digo "dando as últimas", não é exagero não. É o último suspiro mesmo.
