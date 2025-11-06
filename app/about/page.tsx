@@ -63,7 +63,7 @@ export default function AboutPage() {
           </CardHeader>
 
           <CardContent className="px-4 sm:px-8 md:px-16 lg:px-20 py-8 sm:py-10">
-            <article className="prose prose-base sm:prose-lg prose-neutral dark:prose-invert max-w-none prose-headings:font-heading prose-headings:font-bold prose-p:leading-relaxed">
+            <article className="prose prose-base sm:prose-lg md:prose-lg prose-neutral dark:prose-invert max-w-none prose-headings:font-heading prose-headings:font-bold prose-p:leading-relaxed">
               <h2>Zarathon Viana</h2>
 
               <p>
