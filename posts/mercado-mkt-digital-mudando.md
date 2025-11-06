@@ -46,7 +46,7 @@ Agora vem a parte que interessa pra você que trabalha com tecnologia: **pra ond
 Três setores principais:
 
 ### 1. B2B SaaS
-Software como serviço voltado pra empresas. É o modelo do ClickFunnels, do RD Station, da Resultados Digitais. Assinatura mensal ou anual, receita recorrente, escalabilidade infinita.
+Software como serviço voltado pra empresas. É o modelo do ClickFunnels, do RD Station, da VTEX. Assinatura mensal ou anual, receita recorrente, escalabilidade infinita.
 
 ### 2. iGaming e Apostas Esportivas
 Rapaz, esse mercado explodiu no Brasil. Deixa eu te mostrar uns números absurdos:
