@@ -25,9 +25,11 @@ export async function generateMetadata({
   const { slug } = await params;
 
   try {
+    const prefix: string = '/blog';
     const post = await getPostData(slug);
     const postUrl = `${siteUrl}/posts/${slug}`;
-    const ogImage = post.image ? `${siteUrl}${post.image}` : `${siteUrl}/og-default.svg`;
+    const ogImage = post.image ? `${siteUrl}${post.image.replace(prefix, '')}` : `${siteUrl}/og-default.svg`;
+    
 
     return {
       title: post.title,
